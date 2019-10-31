@@ -1,0 +1,21 @@
+<ion-toolbar>
+  <ion-buttons slot="primary">
+  </ion-buttons>
+  <ion-title>Car Space</ion-title>
+  <ion-buttons slot="start">
+    <ion-menu-button autoHide="false"></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar>
+
+
+<ion-content>
+    <ion-searchbar animated></ion-searchbar>
+  <div id="map_canvas" (click)="mapClick()">
+ 
+    <ion-button (click)="posLocal()">
+      <ion-icon name="locate">
+        Pos. Local: {{ lat }} {{ lng }}
+      </ion-icon>
+    </ion-button>
+  </div>
+</ion-content>
